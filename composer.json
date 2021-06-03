@@ -1,0 +1,39 @@
+{
+  "name": "pkgstore/mediawiki-ext-align",
+  "type": "mediawiki-extension",
+  "description": "MediaWiki text align extension.",
+  "license": "MIT",
+  "homepage": "https://pkgstore.github.io/",
+  "keywords": [
+    "mediawiki",
+    "align"
+  ],
+  "authors": [
+    {
+      "name": "Kitsune Solar",
+      "email": "kitsune.solar@gmail.com",
+      "homepage": "https://kitsune.solar/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/pkgstore/mediawiki-ext-align/issues",
+    "source": "https://github.com/pkgstore/mediawiki-ext-align"
+  },
+  "require": {
+    "composer/installers": "^1.9",
+    "pkgstore/mediawiki-ext-kernel": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "MW_EXT_Align.class.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "extra": {
+    "installer-name": "MW_EXT_Align"
+  }
+}
